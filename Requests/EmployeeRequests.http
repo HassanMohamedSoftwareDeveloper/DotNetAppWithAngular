@@ -1,0 +1,35 @@
+@host=http://localhost:5285/api/employee
+
+GET {{host}}
+Content-Type : application/json
+
+
+
+GET {{host}}/5
+Content-Type : application/json
+
+
+POST {{host}}
+Content-Type : application/json
+
+{
+    "employeeName": "Employee4",
+    "departmentId": 1,
+    "dateOfJoining": "2022-05-01",
+    "photoFileName": "avatar.jpg"
+}
+
+
+PUT {{host}}/6
+Content-Type : application/json
+
+{
+    "employeeName": "Hassan",
+    "departmentId": 1,
+    "dateOfJoining": "2022-04-01T00:00:00",
+    "photoFileName": "avatar.jpg"
+}
+
+
+DELETE {{host}}/4
+Content-Type : application/json

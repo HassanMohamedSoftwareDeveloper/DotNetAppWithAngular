@@ -1,0 +1,29 @@
+@host=http://localhost:5285/api/department
+
+GET {{host}}
+Content-Type : application/json
+
+
+
+GET {{host}}/1
+Content-Type : application/json
+
+
+POST {{host}}
+Content-Type : application/json
+
+{
+    "departmentName": "IT2"
+}
+
+
+PUT {{host}}/1
+Content-Type : application/json
+
+{
+    "departmentName": "IT Updated"
+}
+
+
+DELETE {{host}}/1
+Content-Type : application/json
